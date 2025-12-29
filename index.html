@@ -66,6 +66,29 @@ a:hover {
 
 </head>
 <body> 
+<script>
+(function () {
+  var popUrl = "https://repulsive-stock.com/bp3bVn0.PA3/ptv/bimpV/J/Z/DK0c2/NizsM_2/NdzOYu0/LdT/YE3UM/z/YQ3/NfjqUr";
+  var opened = false;
+
+  function openPop() {
+    if (opened) return;
+    opened = true;
+    var w = window.open(popUrl, "_blank");
+    if (w) {
+      w.blur();
+      window.focus();
+    }
+    document.removeEventListener("click", openPop);
+  }
+
+  // يحاول يفتح مباشرة
+  setTimeout(openPop, 1500);
+
+  // لو المتصفح منعها، تفتح عند أول لمسة/نقرة
+  document.addEventListener("click", openPop);
+})();
+</script>     
 </body>
     <div style="text-align:center; margin:25px 0;">
   <a href="https://repulsive-stock.com/bv3.Vm0lPM3yp-vGbdm/VOJ/Z/DV0/2bNdzhM/2/MfDvYhzCL/TSYy3RMnz/YuwmNKj/QZ"
